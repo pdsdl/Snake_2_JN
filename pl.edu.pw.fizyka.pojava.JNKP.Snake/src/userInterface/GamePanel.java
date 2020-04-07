@@ -24,6 +24,7 @@ public class GamePanel extends JPanel
 	private void initializeVariables()
 	{
 		this.backgroundImage = ImageFactory.createImage(Image.BACKGROUND); 
+		//this.timer = new Timer(Constants.GAME_SPEED,new GameLoop(this));
 		this.timer = new Timer(Constants.GAME_SPEED,new GameLoop(this));
 	}
 

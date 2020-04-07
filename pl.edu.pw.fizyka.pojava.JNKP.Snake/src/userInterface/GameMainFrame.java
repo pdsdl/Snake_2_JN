@@ -28,6 +28,7 @@ public class GameMainFrame extends JFrame
 		setLocationRelativeTo(null);
 		setResizable(false);
 		setVisible(true);
+		//karol
 		
 	}
 }

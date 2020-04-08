@@ -1,5 +1,7 @@
 package userInterface;
 
+import java.awt.BorderLayout;
+
 import javax.swing.JFrame;
 
 import constants.Constants;
@@ -8,6 +10,9 @@ import images.ImageFactory;
 
 public class GameMainFrame extends JFrame
 {
+	
+	private static final long serialVersionUID = 1L;
+
 	public GameMainFrame()
 	{
 		initializeLayout();
@@ -15,7 +20,9 @@ public class GameMainFrame extends JFrame
 	
 	private void initializeLayout()
 	{
-		add(new GamePanel());
+		add(new GamePanel(), BorderLayout.CENTER);
+		add(new MenuBar(), BorderLayout.PAGE_START);
+		
 		
 		setTitle(Constants.TITLE);
 		setIconImage(ImageFactory.createImage(Image.SNAKEHEAD).getImage());

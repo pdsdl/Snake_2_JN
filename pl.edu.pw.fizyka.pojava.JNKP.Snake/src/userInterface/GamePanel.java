@@ -23,9 +23,9 @@ public class GamePanel extends JPanel
 	
 	private void initializeVariables()
 	{
-		this.backgroundImage = ImageFactory.createImage(Image.BACKGROUND); 
-		//this.timer = new Timer(Constants.GAME_SPEED,new GameLoop(this));
+		this.backgroundImage = ImageFactory.createImage(Image.BACKGROUND);
 		this.timer = new Timer(Constants.GAME_SPEED,new GameLoop(this));
+		this.timer.start();
 	}
 
 	private void initializeLayout()
@@ -39,11 +39,22 @@ public class GamePanel extends JPanel
 		super.paintComponent(g);
 		
 		g.drawImage(backgroundImage.getImage(),0,0,null);
+		
+		System.out.println("REPAINT");
 	}
 
 	public void doOneLoop()
 	{
-		// TODO Auto-generated method stub
-		
+		update();
+		draw();
+	}
+	
+	private void update()
+	{
+		System.out.println("UPDATE");
+	}
+	
+	private void draw()
+	{
 	}
 }

@@ -18,7 +18,7 @@ public class GameMainFrame extends JFrame
 		add(new GamePanel());
 		
 		setTitle(Constants.TITLE);
-		setIconImage(ImageFactory.createImage(Image.SNAKE).getImage());
+		setIconImage(ImageFactory.createImage(Image.SNAKEHEAD).getImage());
 		
 		pack();//dzieki temu i add(new GamePanel()) upewniamy sie, ze okno
 		//bedzie w takim rozmiarze jak chcemy w GamePanel
@@ -28,7 +28,6 @@ public class GameMainFrame extends JFrame
 		setLocationRelativeTo(null);
 		setResizable(false);
 		setVisible(true);
-		//karol
 		
 	}
 }

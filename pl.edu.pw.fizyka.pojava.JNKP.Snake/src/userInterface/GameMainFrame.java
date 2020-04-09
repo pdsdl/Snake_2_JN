@@ -22,7 +22,7 @@ public class GameMainFrame extends JFrame
 	{
 		add(new GamePanel(), BorderLayout.CENTER);
 		add(new MenuBar(), BorderLayout.PAGE_START);
-		
+		add(new RightPanel(), BorderLayout.LINE_END);
 		
 		setTitle(Constants.TITLE);
 		setIconImage(ImageFactory.createImage(Image.SNAKEHEAD).getImage());
@@ -35,6 +35,5 @@ public class GameMainFrame extends JFrame
 		setLocationRelativeTo(null);
 		setResizable(false);
 		setVisible(true);
-		
 	}
 }

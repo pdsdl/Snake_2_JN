@@ -15,7 +15,7 @@ public class Constants
 	public static final int BOARD_HEIGHT = 600;
 	
 	//tempo odswiezanie aplikacji
-	public static final int GAME_SPEED = 30; /*30ms = ponad 30 odswiezen na sekunde
+	public static final int GAME_SPEED = 430; /*30ms = ponad 30 odswiezen na sekunde
 	czyli ponad 30FPS -> optymalna plynnosc*/ //ZMIENIC W RAZIE ZASOBOZERNOSCI
 	//userInterface/GamePanel/paintComponent i update nie dzialaja w 100% prawidlowo
 	
@@ -27,6 +27,6 @@ public class Constants
 	
 	//dane o glowie weza - do pozyccjonowania
 	public static final int SNAKEHEAD_HEIGHT = 87;
-	public static final int SNAKEHEAD_WIDHT = 89;
+	public static final int SNAKEHEAD_WIDTH = 89;
 	
 }

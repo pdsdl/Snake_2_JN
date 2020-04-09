@@ -1,13 +1,9 @@
 package model;
 
-import java.awt.Color;
-import java.awt.event.KeyEvent;
 import java.util.Random;
 import constants.Constants;
 import javax.swing.ImageIcon;
-import java.util.Random;
 
-import constants.Constants;
 import images.Image;
 import images.ImageFactory;
 
@@ -38,8 +34,8 @@ public class Candy extends Sprite
 		setX(random.nextBoolean() ? a : b);
 		setY(randomStartY);*/
 		
-		int randomStartX = rand.nextInt(900);
-		int randomStartY = rand.nextInt(750);
+		int randomStartX = rand.nextInt(Constants.BOARD_WIDTH);
+		int randomStartY = rand.nextInt(Constants.BOARD_HEIGHT);
 		
 		setX(randomStartX);
 		setY(randomStartY);
